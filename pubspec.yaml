@@ -66,6 +66,10 @@ flutter:
      - assets/paper_icon.png
      - assets/purple_check.png
      - assets/right_arrow.png
+     - assets/linier_background.png
+     - assets/pricing_illustration.png
+     - assets/orange_check.png
+     - assets/button_arrow.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
