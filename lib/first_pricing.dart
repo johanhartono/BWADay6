@@ -14,6 +14,7 @@ class _FirstPricingState extends State<FirstPricing> {
   int selectedIndex = -1;
   @override
   Widget build(BuildContext context) {
+    
     Widget header() {
       return Padding(
         padding: const EdgeInsets.only(
@@ -69,7 +70,7 @@ class _FirstPricingState extends State<FirstPricing> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(60),
                 border: Border.all(
-                  color: selectedIndex == index ?  Color(0xffD9DEEA) : Color(0xff6050E7))),
+                  color: selectedIndex == index ?  Color(0xff6050E7) : Color(0xffD9DEEA))),
             child: Padding(
               padding: const EdgeInsets.only(top: 8.0, left: 17, bottom: 17),
               child: Row(
@@ -140,6 +141,37 @@ class _FirstPricingState extends State<FirstPricing> {
              SizedBox(height: 10,),
             options(2,'assets/dollar_icon.png','Balance Report','can up to ','4K'),
           ],
-        ));
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color(0xff6050E7),
+          items:  <BottomNavigationBarItem> [
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.only(top: 15, left: 60),
+                child: Text('Upgrade Now',
+                style: GoogleFonts.poppins(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                )),
+              ),
+              label : '',
+              ),            
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.only(
+                  top: 15, 
+                  left: 30, 
+                  right: 126),
+                child: Image.asset('assets/right_arrow.png',
+                width: 24,),
+              ),
+              label : '',
+              ),
+          ],
+        ) ,
+        )
+        ;
   }
 }
