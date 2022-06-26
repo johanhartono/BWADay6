@@ -1,4 +1,4 @@
-import 'package:bwadesigntocodeday6/second_pricing.dart';
+import 'package:bwadesigntocodeday6/first_pricing.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,7 +15,7 @@ class SevenDays extends StatelessWidget {
     return const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Seven Days Flutter Demo',
-        home: SecondPricing(
+        home: FirstPricing(
        
         )
         );

@@ -66,7 +66,7 @@ TextStyle firstTextStyle = GoogleFonts.poppins(
   fontWeight: FontWeight.w600,
 );
 TextStyle subTextStyle = GoogleFonts.poppins(
-  color:Color.fromARGB(255, 204, 207, 212),
+  color:const Color.fromARGB(255, 204, 207, 212),
   fontSize: 16,
   fontWeight: FontWeight.w600,
 );
